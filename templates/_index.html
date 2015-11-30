@@ -18,7 +18,14 @@
 
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="bower_components/highlightjs/styles/zenburn.css">
-
+        <style media="screen">
+        .shade {
+          background: rgb(33, 33, 33); /* Fall-back for browsers that don't
+                                          support rgba */
+          background: rgba(33, 33, 33, .6);
+          padding: 8px;
+        }
+        </style>
         <!-- Printing and PDF exports -->
         <script>
             var link = document.createElement( 'link' );
