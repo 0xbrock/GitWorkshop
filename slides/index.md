@@ -1,10 +1,6 @@
 
-# Git
+# Git Workshop
 
-From the terminal, pop in:
+Brock
 
-  ```yo reveal:slide "Slide Title"```
-
-Available options:
-
- ```--markdown --attributes --notes```
+December 3, 2015

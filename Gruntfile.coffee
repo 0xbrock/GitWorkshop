@@ -94,6 +94,25 @@ module.exports = (grunt) ->
                     branch: 'gh-pages'
 
 
+        buildappmanifest:
+
+            generate:
+                options:
+                    basePath: "../"
+                    network: ["http://*", "https://*"]
+                    fallback: ["/ /offline.html"]
+                    exclude: ["js/jquery.min.js"]
+                    preferOnline: true
+                    timestamp: true
+                src: [
+                    "some_files/*.html",
+                    "js/*.min.js",
+                    "css/*.css"
+                ]
+                dest: "manifest.appcache"
+
+
+    grunt.loadNpmTasks 'grunt-contrib-manifest'
 
     # Load all grunt tasks.
     require('load-grunt-tasks')(grunt)
@@ -141,6 +160,10 @@ module.exports = (grunt) ->
             'buildcontrol'
         ]
 
+    grunt.registerTask 'buildmanifest',
+        'Build the App Manifest', [
+          'buildappmanifest'
+        ]
 
     # Define default task.
     grunt.registerTask 'default', [
