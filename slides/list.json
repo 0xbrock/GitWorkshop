@@ -1,0 +1,43 @@
+[
+    "index.md",
+    "agenda.html",
+    [
+      {
+        "filename": "cvcs.html",
+        "attr": {
+            "data-background": "resources/fringe-logo.jpg",
+            "data-transition": "zoom"
+        }
+      },
+      "centeralized.html"
+    ],
+    [
+      {
+        "filename": "dvcs.html",
+        "attr": {
+            "data-background": "resources/doctorwho.png",
+            "data-transition": "zoom"
+
+        }
+      },
+        "distributed.html",
+        "code-transportation-protocol.html",
+        "commits.html",
+        "cli.html"
+    ],
+    [
+        "branching.html",
+        "centralized-branching.html",
+        "decentralized-branching.html"
+    ],
+    [
+        "flexible-workflows.html",
+        "subversion-style.html",
+        "integration-manager.html",
+        "dictator-and-lieutenants.html"
+    ],
+    "much-much-more.html",
+    "extra-resources.html",
+    "installfest.html",
+    "attributions.html"
+]
